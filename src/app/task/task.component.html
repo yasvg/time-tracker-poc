@@ -1,0 +1,7 @@
+<div>
+  <p class="task">{{task.name}}</p>
+  <button class="timerBtn" (click)="startTimeClick()" [ngClass]="{'d-none': timerStarted === true}">Start Time</button>
+  <button class="timerBtn" (click)="stopTimeClick()" [ngClass]="{'d-none': timerStarted === false}">Stop Time</button>
+  <p>Time = {{taskTime}}</p>
+  <p>Total Time Taken = {{totalTime}}</p>
+</div>
